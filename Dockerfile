@@ -35,8 +35,7 @@ ADD aria2.conf /etc/aria2/aria2.conf
 # goreman setup
 RUN echo -e "web: gosu dummy /bin/busybox httpd -f -p 8080 -h /yaaw-zh-hans/public_html\nbackend: gosu dummy /usr/bin/aria2c --conf-path=/etc/aria2/aria2.conf" > Procfile
 
-RUN mkdir /etc/aria2/data
-VOLUME /etc/aria2/data
+RUN mkdir -p /etc/aria2/data/
 
 EXPOSE 8080 6800
 
