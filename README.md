@@ -18,7 +18,7 @@ docker run --name cokapp-aria2 \
     -d 91eb23213bd8
 
 
-docker run --name cokapp-aria4 -v /:/etc/aria2/data -p 6800:6800 -p 80:80 -d aria2:v4
+docker run --name cokapp-aria4 -v /:/etc/aria2/data -p 6800:6800 -p 80:80 -d aria2:v9
 
 
 
