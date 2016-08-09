@@ -9,6 +9,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 	&& apt-get update \
 	&& apt-get install --no-install-recommends --no-install-suggests -y \
 						nginx=${NGINX_VERSION} \
+						wget \
 						aria2 \
 	&& rm -rf /var/lib/apt/lists/*
 
